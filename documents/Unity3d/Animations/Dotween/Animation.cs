@@ -10,3 +10,19 @@ void AMAniUpDown()
     //mySequence.PrependInterval(1);
     mySequence.SetLoops(9999);//Loop
 }
+
+//Hien thi kieu xuat hien ra tu fill tu duoi len tren
+public void Show()
+{
+    Sequence mySequence = DOTween.Sequence();
+    mySequence.Append(gameObject.GetComponent<Image>().DOFillAmount(1,2));
+}
+
+//chay ra nhung 1 cai roi dung lai
+void show()
+    {
+        Sequence mySequence = DOTween.Sequence();
+        mySequence.Append(gameObject.GetComponent<RectTransform>().DOAnchorPos(new Vector2(5,0), 0.5f, false));
+        mySequence.Append(gameObject.GetComponent<RectTransform>().DOAnchorPos(new Vector2(-3, 0), 0.05f, false));
+        mySequence.Append(gameObject.GetComponent<RectTransform>().DOAnchorPos(new Vector2(0, 0), 0.01f, false));
+    }

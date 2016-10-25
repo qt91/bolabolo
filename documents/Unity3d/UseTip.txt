@@ -1,0 +1,2 @@
+1/ Mở các gameobject trong group hoặc đóng
+=> Alt + click into icon Right arrow

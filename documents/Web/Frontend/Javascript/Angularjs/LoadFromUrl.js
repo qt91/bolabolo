@@ -1,5 +1,5 @@
 /**
-     * Get data from
+     * Get data from1
      * @param id
      * @param url
      * @param objData

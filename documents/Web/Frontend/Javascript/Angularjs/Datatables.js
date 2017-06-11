@@ -26,7 +26,7 @@ $this.dtOptions = $this.DTOptionsBuilder.newOptions()
             $this.DTColumnBuilder.newColumn('total').withTitle('Tong Tien').renderWith(function(data, type){
                 return '<p class="text-center">' + $this.$filter('number')(data, '0') + '</p>';
             }),
-            $this.DTColumnBuilder.newColumn('action').withTitle('Tùy ch?n').withOption('searchable', false).withOption('width', '50%')
+            $this.DTColumnBuilder.newColumn('action').withTitle('TÃ¹y ch?n').withOption('searchable', false).withOption('width', '50%')
         ];
         function rowCallback(nRow, aData, iDisplayIndex, iDisplayIndexFull){
             $this.$compile(nRow)($this.$scope);

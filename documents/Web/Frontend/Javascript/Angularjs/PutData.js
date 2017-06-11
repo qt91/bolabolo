@@ -8,7 +8,7 @@
     putData(url, data){
         let $this = this;
         $this.API.all(url).customPUT(data).then(function(response){
-            swal('Th‡nh cÙng!', 'C?p nh?t th‡nh cÙng!', 'success')
+            swal('Th√†nh c√¥ng!', 'C?p nh?t th√†nh c√¥ng!', 'success')
         }, function(response){
             var error = '';
             angular.forEach(response.data, function(value, key){

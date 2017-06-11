@@ -23,7 +23,7 @@ $this.dtOptions = $this.DTOptionsBuilder.newOptions()
             .withPaginationType('full_numbers');
         $this.dtColumns = [
             $this.DTColumnBuilder.newColumn('<TenTrongData>').withTitle('<TenHienThi>'),
-            $this.DTColumnBuilder.newColumn('total').withTitle('T?ng ti?n').renderWith(function(data, type){
+            $this.DTColumnBuilder.newColumn('total').withTitle('Tong Tien').renderWith(function(data, type){
                 return '<p class="text-center">' + $this.$filter('number')(data, '0') + '</p>';
             }),
             $this.DTColumnBuilder.newColumn('action').withTitle('Tùy ch?n').withOption('searchable', false).withOption('width', '50%')
